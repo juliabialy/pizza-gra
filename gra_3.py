@@ -10,7 +10,7 @@ pizza_size = {
 
 pizza_sauces = {
     '1': (Fore.RED, 'Pomidorowy'),
-    '2': (Fore.YELLOW, 'BBQ'),
+    '2': (Fore.LIGHTRED_EX, 'BBQ'),
     '3': (Fore.GREEN, 'Czosnkowy')
 }
 
@@ -67,7 +67,7 @@ def create_pizza():
 
         toppings.append(pizza_toppings.get(topping_choice))
 
-    pizza_base = '    _____\n'
+    pizza_base = '   _____\n'
     pizza_base += '  /     \\\n'
     pizza_base += ' /       \\\n'
     pizza_base += '|         |\n'
@@ -75,7 +75,7 @@ def create_pizza():
 
     for topping in toppings:
         pizza_base += f' {topping_emojis.get(topping)}'
-    pizza_base += ' ' * (7 - len(toppings) * 2)
+    pizza_base += ' ' * (9 - len(toppings) * 2)
 
     pizza_base += '|\n'
     pizza_base += ' \\       /\n'
