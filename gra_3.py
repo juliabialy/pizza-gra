@@ -141,6 +141,8 @@ def main():
     print(Fore.CYAN + "└─────────────────────────────────────────────────────────────────────────────────┘" + Style.RESET_ALL)
     create_pizza()
     play_again()
-
+    
+    if __name__ == '__main__':
+    main()
 
 
