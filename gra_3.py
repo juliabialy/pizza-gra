@@ -75,7 +75,7 @@ def create_pizza():
 
     for topping in toppings:
         pizza_base += f' {topping_emojis.get(topping)}'
-    pizza_base += ' ' * (9 - len(toppings) * 2)
+    pizza_base += ' ' * (9 - len(toppings) * 3)
 
     pizza_base += '|\n'
     pizza_base += ' \\       /\n'
@@ -141,8 +141,7 @@ def main():
     print(Fore.CYAN + "└─────────────────────────────────────────────────────────────────────────────────┘" + Style.RESET_ALL)
     create_pizza()
     play_again()
-    
-    if __name__ == '__main__':
+if __name__ == '__main__':
     main()
 
 
